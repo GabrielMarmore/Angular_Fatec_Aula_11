@@ -1,0 +1,20 @@
+<h1>Bitcoin App - Aula 11</h1>
+<h2>Dados</h2>
+<p>
+  <a href="https://github.com/GabrielMarmore" target="_blank"
+    >Gabriel Mármore</a
+  >
+  - RA 0050832011036
+</p>
+<hr />
+<h2>Bitcoin table</h2>
+<table border="1">
+  <tr>
+    <th>Data / hora</th>
+    <th>BRL</th>
+  </tr>
+  <tr *ngFor="let rate of this.bitcoinService.list">
+    <td>{{ rate.time.updated }}</td>
+    <td>{{ rate.BRL.rate_float }}</td>
+  </tr>
+</table>
